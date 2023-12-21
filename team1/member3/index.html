@@ -1,27 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
+
 <head>
-  <title>팀원3 소개</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>팀원 3 소개</title>
+
+  <link rel="stylesheet" href="./src/style.css" />
+  <link rel="shortcut icon" href="./src/favicon.ico" />
+
+  <script src="https://kit.fontawesome.com/2cc80d7123.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
 </head>
+
 <body>
-  <!--
-    들어가야 하는 것
-    - 프로필 사진
-    - 이름
-    - 학번
-    - 한줄 소개
-    - 최근 관심사 3가지
-
-    조건
-    - 배경 색상을 변경할 것
-    - 이미지는 150x150px
-    - 이름은 h1 태그
-    - 학번은 h2 태그
-    - 한줄 소개는 p 태그
-    - 최근 관심사는 ul 태그
-
-    선택사항
-    - CSS를 이용하여 자유롭게 꾸미기
-  -->
+  <div id="app" class="noselete">
+    <section id="main">
+      <span id="title" class="typewrite" data-period="2800" data-type='[ "김가온", "10401", "1조 팀원 3 " ]'></span>
+      <span id="subtitle">태어난지 <span id="afterBirth">0</span>초</span>
+      <span id="description">리눅스 삽질하는거 좋아합니다</span>
+      <div id="links">
+        <li data-tooltip="github.com/NY0510"><a href="https://github.com/NY0510" target="_blank"><i
+              class="fa-brands fa-github"></i></a></li>
+        <li data-tooltip="ny64"><a href="https://discord.com/users/690148325604720660" target="_blank"><i
+              class="fa-brands fa-discord"></i></a></li>
+        <li data-tooltip="toss.me/nyny64"><a href="https://toss.me/nyny64" target="_blank"><i
+              class="fa-solid fa-coffee"></i></a>
+        <li data-tooltip="blog.ny64.kr"><a href="https://blog.ny64.kr" target="_blank"><i
+              class="fa-solid fa-code"></i></a></li>
+        </li>
+        <li data-tooltip="me@ny64.kr"><a href="mailto:me@ny64.kr" target="_blank"><i class="fa-brands fa-at"></i></a>
+        </li>
+        </li>
+      </div>
+    </section>
+    <section id="footer">
+      <span class="cafe24">btw i use ubuntu</span>
+      <span id="copyright">© 2023 NY64, All rights reserved.</span>
+    </section>
+  </div>
 </body>
+<script src="./src/script.js"></script>
+
 </html>
