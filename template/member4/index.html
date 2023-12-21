@@ -1,27 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
+  <meta charset="UTF-8">
   <title>팀원4 소개</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+    }
+    header {
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-bottom: 20px;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center; /* 가로 가운데 정렬 */
+    }
+    .profile {
+      width: 800px;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    h1, h2, h3 {
+      margin: 5px 0;
+      font-family: 'Arial', sans-serif;
+    }
+    p {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 5px;
+    }
+  </style>
 </head>
 <body>
-  <!--
-    들어가야 하는 것
-    - 프로필 사진
-    - 이름
-    - 학번
-    - 한줄 소개
-    - 최근 관심사 3가지
-
-    조건
-    - 배경 색상을 변경할 것
-    - 이미지는 150x150px
-    - 이름은 h1 태그
-    - 학번은 h2 태그
-    - 한줄 소개는 p 태그
-    - 최근 관심사는 ul 태그
-
-    선택사항
-    - CSS를 이용하여 자유롭게 꾸미기
-  -->
+<header>
+  <h1>선린, PARA, 그리고 유채호</h1>
+</header>
+<div class="container">
+  <div class="profile">
+    <img src="./profile.jpeg" alt="프로필 사진">
+    <div id="profileDescription">
+      <h1>10614 유채호</h1>
+      <p>한줄 소개: 저는 1학년 6반 유채호입니다.<br/>게임개발이 주력이며, 인공지능도 관심 갖고 있습니다.</p>
+      <ul>
+        <li>관심사1 : PARA</li>
+        <li>관심사2 : 이정훈</li>
+        <li>관심사3 : 사랑하는 알지부원들</li>
+      </ul>
+    </div>
+  </div>
+</div>
 </body>
 </html>
