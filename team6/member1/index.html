@@ -1,7 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>팀원1 소개</title>
+  <title>김현호 소개</title>
+  <style>
+    .wholeContainer {
+      width: 100vw;
+      height: 100vh;
+
+      box-sizing: border-box;
+      margin: 0;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      position: relative;
+
+      background-color: #bababa;
+    }
+    .sideContainer {
+      width: 200px;
+      height: 100%;
+
+      padding: 20px 20px;
+
+      position: relative;
+      left: 0;
+
+      background-color: #fff;
+    }
+    .img {
+      width: 150px;
+      height: 150px;
+    }
+  </style>
 </head>
 <body>
   <!--
@@ -23,5 +55,19 @@
     선택사항
     - CSS를 이용하여 자유롭게 꾸미기
   -->
+
+  <div class="wholeContainer">
+    <div class="sideContainer">
+      <img src="profile.png" class="img"/>
+      <h1>김현호</h1>
+      <h2>10502</h2>
+      <p>Deeper Developer</p>
+      <ul>
+        <li>Android</li>
+        <li>React</li>
+        <li>Spring Boot</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
