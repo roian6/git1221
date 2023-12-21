@@ -1,0 +1,122 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@font-face {
+	font-family: "Cafe24SsurroundAir";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Cafe24Ssurround";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	--main-color: #faf3f0;
+	--highlight-color: #e9dffa;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Pretendard", sans-serif;
+	background-color: #101010;
+	color: var(--main-color);
+}
+
+a,
+a:visited,
+a:active {
+	color: var(--main-color);
+	text-decoration: none;
+}
+
+.noselete {
+	-webkit-touch-callout: none !important;
+	-webkit-touch-callout: none !important;
+	-webkit-user-select: none !important;
+	user-select: none !important;
+	-webkit-user-drag: none !important;
+}
+
+.cafe24 {
+	font-family: "Cafe24SsurroundAir";
+}
+
+.typewrite > .wrap {
+	padding-right: 0.5rem;
+	border-right: 0.12rem solid #ffffff81;
+}
+
+#app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+section:not(:first-child) {
+	margin: 1rem 0 1rem 0;
+}
+
+section:first-child {
+	gap: 0.2rem;
+	height: 100vh;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+#title {
+	font-family: "Cafe24Ssurround";
+	color: var(--highlight-color);
+	font-size: 6.5rem;
+	font-weight: 800;
+	letter-spacing: 0;
+}
+
+#subtitle {
+	font-size: 1.7rem;
+	font-weight: 200;
+}
+
+#description {
+	font-size: 1rem;
+	font-weight: 200;
+}
+
+#afterBirth {
+	font-weight: 400;
+	font-feature-settings: "tnum";
+	font-variant-numeric: tabular-nums;
+}
+
+#links {
+	display: flex;
+	flex-direction: row;
+}
+
+#links li {
+	font-size: 1.5rem;
+	margin: 0.5rem;
+	list-style-type: none;
+	transition: all 0.2s ease-in-out;
+}
+
+#links li:hover {
+	transform: scale(1.15);
+}
+
+#copyright {
+	font-size: 0.8rem;
+	font-weight: 200;
+}
